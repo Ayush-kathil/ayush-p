@@ -9,6 +9,7 @@ import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { ParallaxImage } from "@/components/ui/parallax-image";
 
+
 export default function Home() {
   return (
     <div className="flex flex-col w-full">
@@ -54,6 +55,7 @@ export default function Home() {
       <Section className="py-32 border-foreground/10">
          <Link href="/experience" className="group block">
              <div className="relative overflow-hidden mb-8 rounded-lg aspect-video md:aspect-[21/9]">
+
                 <ParallaxImage src="/images/expertise-preview.png" className="bg-secondary/20 scale-105 group-hover:scale-100 transition-transform duration-700" />
                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-500" />
                  <div className="absolute inset-0 flex items-center justify-center">
