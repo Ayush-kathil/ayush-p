@@ -19,7 +19,7 @@ export const projects: Project[] = [
     description: "Machine Learning pipeline to detect fraudulent transactions in imbalanced datasets.",
     fullDescription: "Built a supervised classification pipeline to detect fraudulent transactions in highly imbalanced datasets. Performed data cleaning, feature scaling, and applied SMOTE to address class imbalance. Trained and evaluated Random Forest and Logistic Regression models using precision, recall, and F1-score.",
     tags: ["Machine Learning", "Python", "Scikit-Learn", "SMOTE"],
-    links: { github: "#", demo: "#" },
+    links: { github: "https://github.com/Ayush-kathil/Cyberia---Detecting-Fake-Banking-APKs", demo: "#" },
     year: "2024",
     images: ["https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&q=80"]
   },
@@ -39,7 +39,7 @@ export const projects: Project[] = [
     description: "Real-time computer vision system for pose estimation and correction.",
     fullDescription: "Optimized real-time video processing using OpenCV to reduce latency in pose estimation. Designed a real-time yoga pose detection and correction system using OpenCV and MediaPipe. Implemented a geometric approach using Euclidean distance to compute joint angles.",
     tags: ["Computer Vision", "OpenCV", "MediaPipe", "Python"],
-    links: { github: "#", demo: "#" },
+    links: { github: "https://github.com/Ayush-kathil/YPDS---Yoga-Pose-Detection-System", demo: "#" },
     year: "2023",
     images: ["https://images.unsplash.com/photo-1544367563-12123d8955bf?auto=format&fit=crop&q=80"]
   },
@@ -49,7 +49,7 @@ export const projects: Project[] = [
     description: "Responsive hotel booking website with accessibility-focused UI/UX.",
     fullDescription: "Designed and deployed a responsive hotel booking website using HTML, CSS, and JavaScript. Ensured cross-device compatibility and accessibility-focused UI/UX design. Deployed the application on Netlify for public access.",
     tags: ["Web Development", "HTML/CSS", "JavaScript", "Netlify"],
-    links: { github: "#", demo: "#" },
+    links: { github: "https://github.com/Ayush-kathil/Hotel-Sunrise", demo: "https://welcomesunrise.vercel.app" },
     year: "2024",
     images: ["/images/hotelsunrise.png"]
   },
@@ -59,7 +59,7 @@ export const projects: Project[] = [
     description: "Interactive 2-player game with win/draw logic and responsive UI.",
     fullDescription: "A simple and interactive Tic Tac Toe game built with HTML, CSS, and JavaScript. Features two-player mode, turn-based logic, win/draw detection, and a clean responsive UI.",
     tags: ["Web Development", "HTML", "CSS", "JavaScript"],
-    links: { github: "#", demo: "#" },
+    links: { github: "https://github.com/Ayush-kathil/tic-tac-toe-game", demo: "#" },
     year: "2024",
     images: ["https://images.unsplash.com/photo-1668901382969-8c73e450a1f5?q=80&w=800&auto=format&fit=crop"]
   },
@@ -69,7 +69,7 @@ export const projects: Project[] = [
     description: "Secure tool for editing and locking PDF documents.",
     fullDescription: "A utility for securely editing and protecting PDF references. Implements encryption and permission management for sensitive documents.",
     tags: ["Security", "Python", "Cryptography"],
-    links: { github: "#", demo: "#" },
+    links: { github: "https://github.com/Ayush-kathil/PDF-secure-editz", demo: "#" },
     year: "2025",
     images: ["https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=800&auto=format&fit=crop"]
   },
@@ -79,7 +79,7 @@ export const projects: Project[] = [
     description: "Glassmorphic CGPA & Percentage calculator for students.",
     fullDescription: "A sleek, glassmorphic CGPA & Percentage calculator designed for students. Features a premium Dark/Light theme toggle and smooth animations.",
     tags: ["Web Development", "Glassmorphism", "JavaScript"],
-    links: { github: "#", demo: "#" },
+    links: { github: "https://github.com/Ayush-kathil/Grade-Calculator", demo: "#" },
     year: "2025",
     images: ["https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=800&auto=format&fit=crop"]
   }

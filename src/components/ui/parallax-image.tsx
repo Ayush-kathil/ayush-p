@@ -9,10 +9,9 @@ interface ParallaxImageProps {
   alt?: string;
   className?: string;
   containerClassName?: string;
-  variant?: "default" | "antigravity";
 }
 
-export function ParallaxImage({ src, alt, className, containerClassName, variant = "default" }: ParallaxImageProps) {
+export function ParallaxImage({ src, alt, className, containerClassName }: ParallaxImageProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -28,19 +27,7 @@ export function ParallaxImage({ src, alt, className, containerClassName, variant
         ref={containerRef} 
         className={cn("overflow-hidden relative h-full w-full", containerClassName)}
     >
-      <motion.div 
-        style={variant === "default" ? { y, scale } : undefined} 
-        animate={variant === "antigravity" ? {
-             y: [0, -20, 0],
-             scale: [1, 1.05, 1],
-        } : undefined}
-        transition={variant === "antigravity" ? {
-            duration: 6,
-            repeat: Infinity,
-            ease: "easeInOut"
-        } : undefined}
-        className="absolute inset-0 w-full h-full"
-      >
+      <motion.div style={{ y, scale }} className="absolute inset-0 w-full h-full">
          <div className={cn("w-full h-full bg-cover bg-center", className)} style={{ backgroundImage: src ? `url(${src})` : undefined }} />
          {!src && <div className="w-full h-full bg-muted" />} {/* Fallback */}
       </motion.div>
