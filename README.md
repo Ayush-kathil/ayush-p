@@ -61,7 +61,7 @@ This is a [Next.js](https://nextjs.org) project. To run the portfolio locally on
     ```
 
 4.  **Open your browser:**
-    Navigate to [http://localhost:3000](http://localhost:3000) to see the result.
+    Navigate to [http://localhost:3000](http://ayushgupta3.vercel.app) to see the result.
 
 ## 📝 License
 
