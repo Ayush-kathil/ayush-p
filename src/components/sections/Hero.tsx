@@ -7,17 +7,17 @@ import { StaggeredText } from "@/components/ui/staggered-text";
 export function Hero() {
   const { scrollY } = useScroll();
   const y = useTransform(scrollY, [0, 500], [0, 200]);
-  // Dramatic Scale: Starts at 1, goes to 2.5 (very big) then fades out
-  // The user wants "small to big", so distinct growth is key.
-  const scale = useTransform(scrollY, [0, 600], [1, 2.5]); 
-  const opacity = useTransform(scrollY, [0, 400, 600], [1, 1, 0]); // Fade out as it gets huge
+  
+  // Adjusted scale for mobile to avoid layout thrashing
+  const scale = useTransform(scrollY, [0, 600], [1, 1.5]); 
+  const opacity = useTransform(scrollY, [0, 400, 600], [1, 1, 0]);
 
   return (
     <Section id="home" className="min-h-screen flex flex-col justify-center relative overflow-hidden">
       <div className="z-10">
         <motion.h1 
             style={{ scale, opacity }}
-            className="text-[14vw] md:text-[12vw] leading-[0.9] md:leading-[0.85] font-bold tracking-tighter uppercase text-foreground origin-center"
+            className="text-[15vw] md:text-[12vw] leading-[0.9] md:leading-[0.85] font-bold tracking-tighter uppercase text-foreground origin-center"
         >
           <div className="overflow-hidden">
              <StaggeredText text="Software" delay={0.1} />

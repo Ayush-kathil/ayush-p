@@ -8,8 +8,8 @@ import { ScrollReveal } from "@/components/ui/scroll-reveal";
 
 export function About() {
   return (
-    <Section id="about" className="py-24 border-b border-foreground/10">
-      <div className="flex flex-col md:flex-row gap-16 md:gap-24 items-start">
+    <Section id="about" className="py-12 md:py-24 border-b border-foreground/10">
+      <div className="flex flex-col md:flex-row gap-12 md:gap-24 items-start">
         
         {/* Photo Column */}
         <div className="w-full md:w-5/12 sticky top-24">
@@ -35,7 +35,7 @@ export function About() {
         <div className="w-full md:w-7/12 space-y-12 text-lg">
             <div>
                 <ScrollReveal>
-                    <h2 className="text-4xl md:text-6xl font-bold uppercase tracking-tighter mb-8 text-primary">
+                    <h2 className="text-5xl md:text-6xl font-bold uppercase tracking-tighter mb-8 text-primary">
                         About
                     </h2>
                 </ScrollReveal>

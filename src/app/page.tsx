@@ -17,13 +17,13 @@ export default function Home() {
       <About />
 
       {/* Selected Works Gateway */}
-      <Section className="py-32 border-t border-foreground/10">
+      <Section className="py-24 md:py-32 border-t border-foreground/10">
          <Link href="/projects" className="group block">
-            <div className="relative overflow-hidden mb-8 rounded-lg aspect-video md:aspect-[21/9]">
+            <div className="relative overflow-hidden mb-8 rounded-lg aspect-[4/5] md:aspect-[21/9]">
                 <ParallaxImage src="/images/project-preview.png" className="bg-secondary/20 scale-105 group-hover:scale-100 transition-transform duration-700" />
                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-500" />
                  <div className="absolute inset-0 flex items-center justify-center">
-                    <span className="text-xl md:text-3xl font-mono uppercase border border-white/30 px-6 py-2 rounded-full backdrop-blur-sm text-white opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">
+                    <span className="text-xl md:text-3xl font-mono uppercase border border-white/30 px-6 py-2 rounded-full backdrop-blur-sm text-white opacity-100 md:opacity-0 group-hover:opacity-100 transform md:translate-y-4 group-hover:translate-y-0 transition-all duration-500">
                         View Archive
                     </span>
                  </div>
@@ -52,14 +52,14 @@ export default function Home() {
       </Section>
 
       {/* Expertise Gateway */}
-      <Section className="py-32 border-foreground/10">
+      <Section className="py-24 md:py-32 border-foreground/10">
          <Link href="/experience" className="group block">
-             <div className="relative overflow-hidden mb-8 rounded-lg aspect-video md:aspect-[21/9]">
+             <div className="relative overflow-hidden mb-8 rounded-lg aspect-[4/5] md:aspect-[21/9]">
 
                 <ParallaxImage src="/images/expertise-preview.png" className="bg-secondary/20 scale-105 group-hover:scale-100 transition-transform duration-700" />
                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-500" />
                  <div className="absolute inset-0 flex items-center justify-center">
-                    <span className="text-xl md:text-3xl font-mono uppercase border border-white/30 px-6 py-2 rounded-full backdrop-blur-sm text-white opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">
+                    <span className="text-xl md:text-3xl font-mono uppercase border border-white/30 px-6 py-2 rounded-full backdrop-blur-sm text-white opacity-100 md:opacity-0 group-hover:opacity-100 transform md:translate-y-4 group-hover:translate-y-0 transition-all duration-500">
                         View Capability
                     </span>
                  </div>
@@ -83,18 +83,18 @@ export default function Home() {
       </Section>
 
       {/* Contact Gateway */}
-      <Section className="py-32 border-t border-foreground/10 bg-muted/5">
+      <Section className="py-24 md:py-32 border-t border-foreground/10 bg-muted/5">
         <Link href="/contact" className="group block text-center">
             <motion.div
                 initial={{ scale: 0.9, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.8 }}
             >
-                <h2 className="text-[10vw] font-bold uppercase tracking-tighter leading-none mb-8 group-hover:text-primary transition-colors duration-300">
+                <h2 className="text-[14vw] md:text-[10vw] font-bold uppercase tracking-tighter leading-none mb-8 group-hover:text-primary transition-colors duration-300">
                     Let's Talk
                 </h2>
-                <div className="inline-flex items-center gap-4 text-2xl md:text-4xl border border-foreground/20 rounded-full px-8 py-4 group-hover:bg-foreground group-hover:text-background transition-all duration-300">
-                    Start a Project <ArrowUpRight className="w-8 h-8 group-hover:translate-x-2 transition-transform" />
+                <div className="inline-flex items-center gap-4 text-xl md:text-4xl border border-foreground/20 rounded-full px-6 py-3 md:px-8 md:py-4 group-hover:bg-foreground group-hover:text-background transition-all duration-300">
+                    Start a Project <ArrowUpRight className="w-6 h-6 md:w-8 md:h-8 group-hover:translate-x-2 transition-transform" />
                 </div>
             </motion.div>
         </Link>

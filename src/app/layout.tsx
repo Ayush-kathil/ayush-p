@@ -43,12 +43,14 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <SmoothScroll>
-            <CustomCursor />
-            <GravityBackground />
-            <main className="min-h-screen">
-               {children}
-            </main>
-            <Footer />
+            <div className="overflow-x-hidden w-full relative">
+                <CustomCursor />
+                <GravityBackground />
+                <main className="min-h-screen">
+                   {children}
+                </main>
+                <Footer />
+            </div>
             <div className="fixed bottom-6 right-6 z-50">
               <ThemeToggle />
             </div>

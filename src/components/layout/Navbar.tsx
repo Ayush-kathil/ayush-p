@@ -6,6 +6,7 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { useScroll, useMotionValueEvent, motion } from "framer-motion";
 import { MagneticButton } from "@/components/ui/magnetic-button";
+import { MobileMenu } from "./MobileMenu";
 
 export function Navbar() {
   const { scrollY } = useScroll();
@@ -68,32 +69,29 @@ export function Navbar() {
           </MagneticButton>
         </div>
 
-        {/* Mobile Nav Toggle */}
-        <button
-          className="md:hidden p-2"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          {isOpen ? <X /> : <Menu />}
-        </button>
+      {/* Mobile Nav Toggle */}
+        <div className="md:hidden z-50">
+             <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="relative w-10 h-10 flex flex-col justify-center items-center gap-[6px] group"
+            >
+              <motion.span 
+                animate={isOpen ? { rotate: 45, y: 8 } : { rotate: 0, y: 0 }}
+                className="w-8 h-[2px] bg-current block transition-all duration-300"
+              />
+              <motion.span 
+                 animate={isOpen ? { opacity: 0 } : { opacity: 1 }}
+                className="w-8 h-[2px] bg-current block transition-all duration-300"
+              />
+              <motion.span 
+                animate={isOpen ? { rotate: -45, y: -8 } : { rotate: 0, y: 0 }}
+                className="w-8 h-[2px] bg-current block transition-all duration-300"
+              />
+            </button>
+        </div>
       </div>
 
-      {/* Mobile Nav Menu */}
-      {isOpen && (
-        <div className="fixed inset-0 bg-black z-40 flex items-center justify-center">
-          <div className="flex flex-col gap-8 text-center">
-             {navLinks.map((link) => (
-            <Link
-              key={link.name}
-              href={link.href}
-              onClick={() => setIsOpen(false)}
-              className="text-4xl font-bold uppercase tracking-tighter text-white hover:text-primary transition-colors"
-            >
-              {link.name}
-            </Link>
-          ))}
-          </div>
-        </div>
-      )}
+      <MobileMenu isOpen={isOpen} setIsOpen={setIsOpen} navLinks={navLinks} />
     </motion.nav>
   );
 }
